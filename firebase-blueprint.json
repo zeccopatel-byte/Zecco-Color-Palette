@@ -1,0 +1,39 @@
+{
+  "entities": {
+    "Palette": {
+      "title": "Palette",
+      "description": "A saved color palette.",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "The ID of the user who owns the palette."
+        },
+        "colors": {
+          "type": "array",
+          "description": "The list of colors in the palette.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "createdAt": {
+          "type": "number",
+          "description": "Timestamp when the palette was saved."
+        }
+      },
+      "required": [
+        "userId",
+        "colors",
+        "createdAt"
+      ]
+    }
+  },
+  "firestore": {
+    "/palettes/{paletteId}": {
+      "schema": {
+        "$ref": "Palette"
+      },
+      "description": "Saved user palettes."
+    }
+  }
+}

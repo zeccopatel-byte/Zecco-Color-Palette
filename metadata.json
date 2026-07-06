@@ -1,0 +1,6 @@
+{
+  "name": "ChromaStudio",
+  "description": "Unified Color Intelligence Platform for designers and product teams.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
